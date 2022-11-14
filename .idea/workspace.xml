@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c2cf5c9-9faa-46a7-af85-27c5e1e28433" name="Changes" comment="A first attempt to build the game. &#10;&#10;Created Ticktacktoe main class, Player class to create players, GameInitializer class to initialize the game (create a board, set players etc.) &#10;WinnerChecker is the first mechanism for checking if there  is a winner already.&#10;The Gameplay class will be guiding players through the game." />
+    <list default="true" id="3c2cf5c9-9faa-46a7-af85-27c5e1e28433" name="Changes" comment="A first attempt to build the game. &#10;&#10;Created Ticktacktoe main class, Player class to create players, GameInitializer class to initialize the game (create a board, set players etc.) &#10;WinnerChecker is the first mechanism for checking if there  is a winner already.&#10;The Gameplay class will be guiding players through the game.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/tests/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ttt/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GameInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/GameInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Gameplay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ticktacktoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Ticktacktoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WinnerChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/WinnerChecker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

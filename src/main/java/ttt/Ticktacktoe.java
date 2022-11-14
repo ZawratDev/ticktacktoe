@@ -1,3 +1,5 @@
+package ttt;
+
 public class Ticktacktoe {
 
 	public static void main(String[] args) {

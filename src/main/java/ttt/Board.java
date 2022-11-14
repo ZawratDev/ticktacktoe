@@ -1,6 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Arrays;
+package ttt;
 
 public class Board {
 
@@ -14,9 +12,16 @@ public class Board {
 
 	}
 
-	public void setMove(byte row, byte column, char mark) {
+	public boolean setMove(byte row, byte column, char mark) {
 
-		board[row][column] = mark;
+		if (board[row][column] == 0) {
+			board[row][column] = mark;
+			return true;
+
+		} else {
+			System.out.println("There is a sign already! Choose different socket!");
+			return false;
+		}
 
 	}
 

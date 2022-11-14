@@ -1,6 +1,8 @@
+package ttt;
+
 public class WinnerChecker {
 
-	public byte winCheck(byte[][] board) {
+	public static char winCheck(char[][] board) {
 
 		for (byte i = 0; i < 3; i++) {
 
@@ -24,7 +26,7 @@ public class WinnerChecker {
 
 			return board[1][1];
 
-		return 3;
+		return 0;
 	}
 }
 
