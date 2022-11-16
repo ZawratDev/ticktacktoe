@@ -1,5 +1,6 @@
 package ttt;
 
+
 public class Board {
 
 	private String boardName;
@@ -12,18 +13,6 @@ public class Board {
 
 	}
 
-	public boolean setMove(byte row, byte column, char mark) {
-
-		if (board[row][column] == 0) {
-			board[row][column] = mark;
-			return true;
-
-		} else {
-			System.out.println("There is a sign already! Choose different socket!");
-			return false;
-		}
-
-	}
 
 	public String getBoardName() {
 		return boardName;

@@ -9,8 +9,11 @@ public class Player {
 
 
 	public void setPlayerName(String playerName) {
+
 		this.playerName = playerName;
+
 		this.playerScore = 0;
+
 	}
 
 	public void setPlayerScore(byte point) {

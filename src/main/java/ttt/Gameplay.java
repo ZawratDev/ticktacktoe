@@ -1,34 +1,24 @@
 package ttt;
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class Gameplay {
 
 
-	Scanner scanner = new Scanner(System.in);
-
 	public void playTurn(Player playerOne, Player playerTwo, Board board) {
+
+		Move move = new Move();
 
 		boolean winner = false;
 
 		System.out.println(board.getBoardName());
 
+
 //		System.out.println(playerOne.getPlayerName() + " - Please choose your socket! (for example: \"B2\"");
+
 
 		for (byte i = 1; i < 5; i++) {
 
-			System.out.println(playerOne.getPlayerName() + " - Please choose your row! (for example: 1/2/3): ");
-
-			byte playerRow = scanner.nextByte();
-			scanner.nextLine();
-
-			System.out.println(playerOne.getPlayerName() + " - Please choose your column! (for example: 1/2/3): ");
-			byte playerColumn = scanner.nextByte();
-			scanner.nextLine();
-
-			board.setMove(playerRow, playerColumn, playerOne.getPlayerChar());
-			System.out.println(Arrays.deepToString(board.getBoard()) + "\n");
+			move.makeLegalMove(playerOne, board);
 
 
 			if (WinnerChecker.winCheck(board.getBoard()) != 0) {
@@ -39,17 +29,7 @@ public class Gameplay {
 				break;
 			}
 
-			System.out.println(playerTwo.getPlayerName() + " - Please choose your row! (for example: 1/2/3): ");
-
-			playerRow = scanner.nextByte();
-			scanner.nextLine();
-
-			System.out.println(playerTwo.getPlayerName() + " - Please choose your column! (for example: 1/2/3): ");
-			playerColumn = scanner.nextByte();
-			scanner.nextLine();
-
-			board.setMove(playerRow, playerColumn, playerTwo.getPlayerChar());
-			System.out.println(Arrays.deepToString(board.getBoard()) + "\n");
+			move.makeLegalMove(playerTwo, board);
 
 			if (WinnerChecker.winCheck(board.getBoard()) != 0) {
 
