@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c2cf5c9-9faa-46a7-af85-27c5e1e28433" name="Changes" comment="Gameplay improvement&#10;&#10;Added a possibility for playerTwo to make his move.&#10;Added a console message with a name of the winner.&#10;Added an increment for player score after win.&#10;Added a loop for max. rounds = 5 -&gt; (5x2 players)&#10;Added an if statement that prints message on the console &quot;no winner&quot; if there won't be any winner after 5 turns.&#10;Added a protection in Board.java which prevents a user for overriding a sign that already has been set (you cannot override your/your opponent's move).&#10;Added a Tester.java class in the new package &quot;tests&quot; but it has to be written.&#10;Added a temporary package &quot;ttt&quot; for the main classes.&#10;&#10;The return of the method has been set to boolean (it needs a further analysis and maybe a rollback)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ttt/Move.java" afterDir="false" />
+    <list default="true" id="3c2cf5c9-9faa-46a7-af85-27c5e1e28433" name="Changes" comment="Fixed a bug which was causing a missing turn after a user was trying to override a mark on the board. This fix is in the new class called Move.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ttt/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttt/GameInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/GameInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ttt/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttt/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttt/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttt/Ticktacktoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/Ticktacktoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ttt/WinnerChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ttt/WinnerChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +41,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668465351045</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed a bug which was causing a missing turn after a user was trying to override a mark on the board. This fix is in the new class called Move.">
+      <created>1668632601463</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668632601463</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +101,7 @@
     <MESSAGE value="A first attempt to build the game. &#10;&#10;Created Ticktacktoe main class, Player class to create players, GameInitializer class to initialize the game (create a board, set players etc.) &#10;WinnerChecker is the first mechanism for checking if there  is a winner already.&#10;The Gameplay class will be guiding players through the game." />
     <MESSAGE value="Gameplay improvement&#10;&#10;Added a possibility for playerTwo to make his move.&#10;Added a console message with a name of the winner.&#10;Added an increment for player score after win.&#10;Added a loop for max. rounds = 5 -&gt; (5x2 players)&#10;Added an if statement that prints message on the console &quot;no winner&quot; if there won't be any winner after 5 turns.&#10;Added a protection in Board.java which prevents a user for overriding a sign that already has been set (you cannot override your/your opponent's move).&#10;Added a Tester.java class in the new package &quot;tests&quot; but it has to be written.&#10;Added a temporary package &quot;ttt&quot; for the main classes." />
     <MESSAGE value="Gameplay improvement&#10;&#10;Added a possibility for playerTwo to make his move.&#10;Added a console message with a name of the winner.&#10;Added an increment for player score after win.&#10;Added a loop for max. rounds = 5 -&gt; (5x2 players)&#10;Added an if statement that prints message on the console &quot;no winner&quot; if there won't be any winner after 5 turns.&#10;Added a protection in Board.java which prevents a user for overriding a sign that already has been set (you cannot override your/your opponent's move).&#10;Added a Tester.java class in the new package &quot;tests&quot; but it has to be written.&#10;Added a temporary package &quot;ttt&quot; for the main classes.&#10;&#10;The return of the method has been set to boolean (it needs a further analysis and maybe a rollback)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gameplay improvement&#10;&#10;Added a possibility for playerTwo to make his move.&#10;Added a console message with a name of the winner.&#10;Added an increment for player score after win.&#10;Added a loop for max. rounds = 5 -&gt; (5x2 players)&#10;Added an if statement that prints message on the console &quot;no winner&quot; if there won't be any winner after 5 turns.&#10;Added a protection in Board.java which prevents a user for overriding a sign that already has been set (you cannot override your/your opponent's move).&#10;Added a Tester.java class in the new package &quot;tests&quot; but it has to be written.&#10;Added a temporary package &quot;ttt&quot; for the main classes.&#10;&#10;The return of the method has been set to boolean (it needs a further analysis and maybe a rollback)" />
+    <MESSAGE value="Fixed a bug which was causing a missing turn after a user was trying to override a mark on the board. This fix is in the new class called Move." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug which was causing a missing turn after a user was trying to override a mark on the board. This fix is in the new class called Move." />
   </component>
 </project>

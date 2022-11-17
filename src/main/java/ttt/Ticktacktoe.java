@@ -8,14 +8,10 @@ public class Ticktacktoe {
 		Player playerTwo = new Player();
 
 		try  {
-
 			GameInitializer.startGame(playerOne, playerTwo);
-
 		}
 		catch (Exception e) {
-
 			System.out.println("Something went wrong. Exiting...");
-
 			System.exit(1);
 		}
 	}

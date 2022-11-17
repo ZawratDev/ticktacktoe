@@ -25,20 +25,16 @@ public class Move {
 		boolean legalMove;
 
 		do {
-
 			System.out.println(player.getPlayerName() + " - Please choose your row! (for example: 1/2/3): ");
-
 			byte playerRow = scanner.nextByte();
 			scanner.nextLine();
 
 
 			System.out.println(player.getPlayerName() + " - Please choose your column! (for example: 1/2/3): ");
-
 			byte playerColumn = scanner.nextByte();
 			scanner.nextLine();
 
 			legalMove = setMove(playerRow, playerColumn, player.getPlayerChar(), board.getBoard());
-
 			System.out.println(Arrays.deepToString(board.getBoard()) + "\n");
 
 		} while (!legalMove);

@@ -3,7 +3,6 @@ package ttt;
 import java.util.Scanner;
 
 public class GameInitializer {
-
 	static Scanner scanner = new Scanner(System.in);
 
 	public static void startGame(Player playerOne, Player playerTwo) {
@@ -23,21 +22,17 @@ public class GameInitializer {
 				playerTwo.setPlayerName(scanner.nextLine());
 
 				if (playerTwo.getPlayerName().equals(playerOne.getPlayerName())) {
-
 					System.out.println("Choose a different name than the player one!: ");
-
 				} else validator = true;
 
 			} while (!validator);
 
 			do {
-
 				System.out.println(playerTwo.getPlayerName() + " choose your sign (for example: \"x\" or \"o\"): ");
 				playerTwo.setPlayerChar(scanner.next().charAt(0));
 				scanner.nextLine();
 
 				if (playerTwo.getPlayerChar() == (playerOne.getPlayerChar())) {
-
 					System.out.println("Choose a different char than the player one!: ");
 					validator = false;
 
